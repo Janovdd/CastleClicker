@@ -449,9 +449,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ce104f9bc3ac74ba1198d4c6d4e0e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BlurMaterial: {fileID: 2100000, guid: d92f97f7f33ed1943af6413960880983, type: 2}
-  Iterations: 0
-  DownRes: 0
 --- !u!1 &188384510
 GameObject:
   m_ObjectHideFlags: 0
@@ -461,6 +458,7 @@ GameObject:
   m_Component:
   - component: {fileID: 188384511}
   - component: {fileID: 188384512}
+  - component: {fileID: 188384513}
   m_Layer: 0
   m_Name: WindmillFar_2
   m_TagString: Untagged
@@ -525,6 +523,23 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &188384513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 188384510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0adec02beb5d649449c2fb33d5b37c48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  durationPhase0: 1
+  durationPhase1: 1
+  durationPhase2: 1
+  durationPhase3: 1
+  colorPhase0: {r: 1, g: 1, b: 1, a: 1}
+  colorPhase2: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &229289292
 GameObject:
   m_ObjectHideFlags: 0
@@ -753,6 +768,7 @@ GameObject:
   m_Component:
   - component: {fileID: 283113366}
   - component: {fileID: 283113367}
+  - component: {fileID: 283113368}
   m_Layer: 0
   m_Name: WindmillFar_2
   m_TagString: Untagged
@@ -817,6 +833,23 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &283113368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 283113365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0adec02beb5d649449c2fb33d5b37c48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  durationPhase0: 1
+  durationPhase1: 1
+  durationPhase2: 1
+  durationPhase3: 1
+  colorPhase0: {r: 1, g: 1, b: 1, a: 1}
+  colorPhase2: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &324182247
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,6 +924,7 @@ GameObject:
   m_Component:
   - component: {fileID: 359039880}
   - component: {fileID: 359039881}
+  - component: {fileID: 359039882}
   m_Layer: 0
   m_Name: WindmillFar_3
   m_TagString: Untagged
@@ -955,6 +989,23 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &359039882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 359039879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0adec02beb5d649449c2fb33d5b37c48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  durationPhase0: 1
+  durationPhase1: 1
+  durationPhase2: 1
+  durationPhase3: 1
+  colorPhase0: {r: 1, g: 1, b: 1, a: 1}
+  colorPhase2: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &372086507
 GameObject:
   m_ObjectHideFlags: 0
@@ -1360,6 +1411,7 @@ GameObject:
   m_Component:
   - component: {fileID: 639473978}
   - component: {fileID: 639473979}
+  - component: {fileID: 639473980}
   m_Layer: 0
   m_Name: WindmillFar_2
   m_TagString: Untagged
@@ -1424,6 +1476,23 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &639473980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 639473977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0adec02beb5d649449c2fb33d5b37c48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  durationPhase0: 1
+  durationPhase1: 1
+  durationPhase2: 1
+  durationPhase3: 1
+  colorPhase0: {r: 1, g: 1, b: 1, a: 1}
+  colorPhase2: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &642226251
 GameObject:
   m_ObjectHideFlags: 0
@@ -1708,7 +1777,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 100
+      scalar: 113.55
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -5506,6 +5575,7 @@ GameObject:
   m_Component:
   - component: {fileID: 806467484}
   - component: {fileID: 806467483}
+  - component: {fileID: 806467485}
   m_Layer: 0
   m_Name: background
   m_TagString: Untagged
@@ -5570,6 +5640,23 @@ Transform:
   m_Father: {fileID: 1523774316}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &806467485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 806467482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0adec02beb5d649449c2fb33d5b37c48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  durationPhase0: 1
+  durationPhase1: 1
+  durationPhase2: 1
+  durationPhase3: 1
+  colorPhase0: {r: 1, g: 1, b: 1, a: 1}
+  colorPhase2: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &822358153
 GameObject:
   m_ObjectHideFlags: 0
@@ -6361,46 +6448,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!1 &1155241646
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1155241648}
-  - component: {fileID: 1155241647}
-  m_Layer: 0
-  m_Name: Time
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1155241647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1155241646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5afe0f496c4f9b41a34fcbd731bab7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1155241648
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1155241646}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.6068258, y: -0.55579334, z: -2.7664711}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1168336017
 GameObject:
   m_ObjectHideFlags: 0
@@ -6902,6 +6949,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1413413424}
   - component: {fileID: 1413413425}
+  - component: {fileID: 1413413426}
   m_Layer: 0
   m_Name: WindmillFar_3
   m_TagString: Untagged
@@ -6966,6 +7014,23 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &1413413426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1413413423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0adec02beb5d649449c2fb33d5b37c48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  durationPhase0: 1
+  durationPhase1: 1
+  durationPhase2: 1
+  durationPhase3: 1
+  colorPhase0: {r: 1, g: 1, b: 1, a: 1}
+  colorPhase2: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &1421443144
 GameObject:
   m_ObjectHideFlags: 0
@@ -7048,9 +7113,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1421443144}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64d18a19d17b35b45ba8ad010dd7cd07, type: 3}
+  m_Script: {fileID: 11500000, guid: 0adec02beb5d649449c2fb33d5b37c48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  durationPhase0: 1
+  durationPhase1: 1
+  durationPhase2: 1
+  durationPhase3: 1
+  colorPhase0: {r: 1, g: 1, b: 1, a: 1}
+  colorPhase2: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &1421857957
 GameObject:
   m_ObjectHideFlags: 0
