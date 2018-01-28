@@ -4,10 +4,10 @@ public class DayNightCycleBackground : MonoBehaviour {
     private PhaseTimer dayNightTimer;
     private int currentPhase;
     private SpriteRenderer backGroundSprite;
-    public float durationPhase0 = 1;
-    public float durationPhase1 = 1;
-    public float durationPhase2 = 1;
-    public float durationPhase3 = 1;
+    public float durationPhase0 = 100;
+    public float durationPhase1 = 20;
+    public float durationPhase2 = 100;
+    public float durationPhase3 = 20;
     public Color colorPhase0 = Color.white;
     public Color colorPhase2 = Color.black;
     private float timeElapsed = 0;

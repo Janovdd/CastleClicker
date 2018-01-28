@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 687b3db254bc00147b3008fc3b649dee
-timeCreated: 1517008361
+timeCreated: 1517152659
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -107,10 +107,10 @@ TextureImporter:
       name: WindmillFar_0
       rect:
         serializedVersion: 2
-        x: 395
-        y: 2455
-        width: 1007
-        height: 912
+        x: 0
+        y: 2341
+        width: 998
+        height: 879
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,10 +121,10 @@ TextureImporter:
       name: WindmillFar_1
       rect:
         serializedVersion: 2
-        x: 1496
-        y: 2387
-        width: 2282
-        height: 1294
+        x: 1112
+        y: 2270
+        width: 2254
+        height: 1260
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,10 +135,10 @@ TextureImporter:
       name: WindmillFar_2
       rect:
         serializedVersion: 2
-        x: 395
-        y: 271
-        width: 2178
-        height: 2151
+        x: 0
+        y: 0
+        width: 2160
+        height: 2130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,10 +149,10 @@ TextureImporter:
       name: WindmillFar_3
       rect:
         serializedVersion: 2
-        x: 2536
-        y: 474
-        width: 1036
-        height: 1733
+        x: 2158
+        y: 217
+        width: 1008
+        height: 1695
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
