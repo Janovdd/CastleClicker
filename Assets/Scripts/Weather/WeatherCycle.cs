@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Timers;
 using UnityEngine;
 
@@ -13,12 +14,24 @@ public class WeatherCycle : MonoBehaviour
 
     private System.Random random;
 
-    private bool rain;
-    private bool thunder;
+    private List<GameObject> cloud;
+    private List<GameObject> rain;
+    private List<GameObject> thunder;
+
+    private bool rainIsOn;
+    private bool thunderIsOn;
 
     // Use this for initialization
     void Start()
     {
+        cloud = new List<GameObject>(GameObject.FindGameObjectsWithTag("Cloud"));
+        rain = new List<GameObject>(GameObject.FindGameObjectsWithTag("Rain"));
+        thunder = new List<GameObject>(GameObject.FindGameObjectsWithTag("Thunder"));
+
+        rainIsOn = false;
+        thunderIsOn = false;
+        random = new System.Random();
+
         phase = 0;
         timeToUpdate = new Timer
         {
@@ -64,37 +77,63 @@ public class WeatherCycle : MonoBehaviour
 
     private void ThunderOn()
     {
-        if (!thunder)
+        if (!thunderIsOn)
         {
-            thunder = true;
-            //code for enabling random thunder animation
+            thunderIsOn = true;
+            for(int i = 0;i<=thunder.Capacity; i++)
+            {
+                var component = thunder[i].GetComponent<Thunder>();
+                component.isOn = true;
+            }
         }
     }
 
     private void RainOn()
     {
-        if (!rain)
+        if (!rainIsOn)
         {
-            rain = true;
-            //code for clouds moving in
-            //code for enabling rain after clouds moving in
+            rainIsOn = true;
+            for(int i=0;i<=cloud.Capacity; i++)
+            {
+                var component = cloud[i].GetComponent<Cloud>();
+                component.isOn = true;
+            }
+            new WaitForSeconds(3);
+            for (int i = 0; i <= rain.Capacity; i++)
+            {
+                var component = rain[i].GetComponent<Rain>();
+                component.isOn = true;
+            }
         }
     }
     private void ThunderOff()
     {
-        if (thunder)
+        if (thunderIsOn)
         {
-            thunder = false;
-            //code for disabling random thunder animation
+            thunderIsOn = false;
+            for (int i = 0; i <= thunder.Capacity; i++)
+            {
+                var component = thunder[i].GetComponent<Thunder>();
+                component.isOn = false;
+            }
         }
     }
     private void RainOff()
     {
-        if (rain)
+        if (rainIsOn)
         {
-            rain = false;
-            //code for disabling rain
-            //code for clouds moving away after rain stopped
+            rainIsOn = false;
+            for (int i = 0; i <= rain.Capacity; i++)
+            {
+                var component = rain[i].GetComponent<Rain>();
+                component.isOn = true;
+            }
+            new WaitForSeconds(3);
+            for (int i = 0; i <= cloud.Capacity; i++)
+            {
+                var component = cloud[i].GetComponent<Cloud>();
+                component.isOn = true;
+            }
         }
     }
 }
