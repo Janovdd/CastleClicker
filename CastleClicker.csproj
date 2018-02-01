@@ -297,13 +297,17 @@
     <Compile Include="Assets\DayTime.cs" />
     <Compile Include="Assets\Scripts\DayNightCycleBackground.cs" />
     <Compile Include="Assets\Scripts\DayNightCycleDL.cs" />
+    <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\PhaseTimer.cs" />
+    <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\Troop.cs" />
     <Compile Include="Assets\Scripts\Weather\Cloud.cs" />
     <Compile Include="Assets\Scripts\Weather\Rain.cs" />
     <Compile Include="Assets\Scripts\Weather\Thunder.cs" />
     <Compile Include="Assets\Scripts\Weather\WeatherCycle.cs" />
     <Compile Include="Assets\TurnBlack.cs" />
+    <Compile Include="Assets\ZPosition.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
