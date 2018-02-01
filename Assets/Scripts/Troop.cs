@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Troop : MonoBehaviour {
 
+	public int movementSpeed;
+	public int dps;
+	public int survivalTime;
+	
 	// Use this for initialization
 	void Start () {
 		
@@ -11,6 +15,7 @@ public class Troop : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position += Vector3.right * Time.deltaTime;
+		transform.position += movementSpeed * (Vector3.right * Time.deltaTime);
 	}
+
 }

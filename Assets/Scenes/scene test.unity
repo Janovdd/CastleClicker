@@ -219,7 +219,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 124425051}
-  - component: {fileID: 124425052}
   - component: {fileID: 124425053}
   m_Layer: 0
   m_Name: Castle 6
@@ -243,18 +242,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &124425052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 124425050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf59ef0d1623bc8458d4371e877848eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  troop: {fileID: 1208784544777462, guid: 1b038bca361788e4c8b3777d56f57a65, type: 2}
 --- !u!114 &124425053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,7 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f76675c81635884fbedfff550f6cc5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  troop: {fileID: 1677474697943444, guid: 16d5b799d52d921438912c2c38a67e88, type: 2}
+  troop: {fileID: 1912923464453804, guid: 16d5b799d52d921438912c2c38a67e88, type: 2}
 --- !u!1 &134575640
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,7 +386,6 @@ GameObject:
   m_Component:
   - component: {fileID: 178076186}
   - component: {fileID: 178076187}
-  - component: {fileID: 178076188}
   m_Layer: 0
   m_Name: Windmill_0
   m_TagString: Untagged
@@ -464,17 +450,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!114 &178076188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 178076185}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8ce104f9bc3ac74ba1198d4c6d4e0e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &188384510
 GameObject:
   m_ObjectHideFlags: 0
@@ -1731,7 +1706,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1371139903
+  randomSeed: -1633249214
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -5241,7 +5216,7 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_Intensity: 2
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 78.90631
   m_CookieSize: 10
@@ -5262,7 +5237,7 @@ Light:
     m_Bits: 4294967295
   m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -5283,7 +5258,7 @@ MonoBehaviour:
   durationPhase2: 1
   durationPhase3: 1
   colorPhase0: {r: 0, g: 0, b: 0, a: 1}
-  colorPhase2: {r: 1, g: 0.72156864, b: 0.34509805, a: 1}
+  colorPhase2: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &701987869
 GameObject:
   m_ObjectHideFlags: 0
@@ -6531,7 +6506,7 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_Intensity: 2
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 78.90631
   m_CookieSize: 10
@@ -6552,7 +6527,7 @@ Light:
     m_Bits: 4294967295
   m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -6573,7 +6548,7 @@ MonoBehaviour:
   durationPhase2: 1
   durationPhase3: 1
   colorPhase0: {r: 0, g: 0, b: 0, a: 1}
-  colorPhase2: {r: 1, g: 0.72156864, b: 0.34509805, a: 1}
+  colorPhase2: {r: 1, g: 0, b: 0, a: 0.128}
 --- !u!1 &1170501561
 GameObject:
   m_ObjectHideFlags: 0
@@ -7320,7 +7295,7 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_Intensity: 2
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 78.90631
   m_CookieSize: 10
@@ -7341,7 +7316,7 @@ Light:
     m_Bits: 4294967295
   m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -7362,7 +7337,7 @@ MonoBehaviour:
   durationPhase2: 1
   durationPhase3: 1
   colorPhase0: {r: 0, g: 0, b: 0, a: 1}
-  colorPhase2: {r: 1, g: 0.72156864, b: 0.34509805, a: 1}
+  colorPhase2: {r: 1, g: 0, b: 0, a: 0.128}
 --- !u!1 &1523774314
 GameObject:
   m_ObjectHideFlags: 0
@@ -7834,9 +7809,12 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1905048033}
+  - component: {fileID: 1905048034}
+  - component: {fileID: 1905048035}
+  - component: {fileID: 1905048036}
   m_Layer: 0
   m_Name: Castle 7
-  m_TagString: Untagged
+  m_TagString: enemyCastle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7848,7 +7826,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1905048032}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.7005174, y: -1.076877, z: -7.102892}
+  m_LocalPosition: {x: -2.7005174, y: -1.076877, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2041322157}
@@ -7856,6 +7834,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1905048034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1905048032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29a804a63e93d144c8898cb851b71fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10000
+--- !u!61 &1905048035
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1905048032}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 13.777624, y: -5.039467}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.0976334, y: 2.5719433}
+  m_EdgeRadius: 0
+--- !u!50 &1905048036
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1905048032}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &2025957308
 GameObject:
   m_ObjectHideFlags: 0
@@ -8251,7 +8286,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2110293773}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.200518, y: 0.24687701, z: 7.102892}
+  m_LocalPosition: {x: 12.200518, y: 0.24687701, z: 0}
   m_LocalScale: {x: 0.3, y: 0.35, z: 1}
   m_Children: []
   m_Father: {fileID: 1905048033}

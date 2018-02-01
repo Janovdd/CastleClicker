@@ -54,6 +54,7 @@
      <Compile Include="Assets\DayTime.cs" />
      <Compile Include="Assets\Scripts\DayNightCycleBackground.cs" />
      <Compile Include="Assets\Scripts\DayNightCycleDL.cs" />
+     <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
      <Compile Include="Assets\Scripts\PhaseTimer.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />

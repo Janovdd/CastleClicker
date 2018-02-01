@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - playerCastle
+  - enemyCastle
   - Troop
   layers:
   - Default
