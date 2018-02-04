@@ -4,10 +4,6 @@ public class DayNightCycleBackground : MonoBehaviour {
     private PhaseTimer dayNightTimer;
     private int currentPhase;
     private SpriteRenderer backGroundSprite;
-    public float durationPhase0 = 1;
-    public float durationPhase1 = 1;
-    public float durationPhase2 = 1;
-    public float durationPhase3 = 1;
     public Color colorPhase0 = Color.white;
     public Color colorPhase2 = Color.black;
     private float timeElapsed = 0;
@@ -15,11 +11,6 @@ public class DayNightCycleBackground : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         dayNightTimer = new PhaseTimer();
-        dayNightTimer.addPhase((int) durationPhase0);
-        dayNightTimer.addPhase((int) durationPhase1);
-        dayNightTimer.addPhase((int) durationPhase2);
-        dayNightTimer.addPhase((int) durationPhase3);
-
         backGroundSprite = GetComponent<SpriteRenderer>();
         backGroundSprite.color = Color.white;
         dayNightTimer.Start();
@@ -38,12 +29,12 @@ public class DayNightCycleBackground : MonoBehaviour {
             if (currentPhase == 1)
             {
                 backGroundSprite.color = Color.Lerp(colorPhase0, colorPhase2, timeElapsed);
-                timeElapsed += Time.deltaTime / durationPhase1;
+                timeElapsed += Time.deltaTime / dayNightTimer.phase2;
             }
             if (currentPhase == 3)
             {
                 backGroundSprite.color = Color.Lerp(colorPhase2, colorPhase0, timeElapsed);
-                timeElapsed += Time.deltaTime / durationPhase3;
+                timeElapsed += Time.deltaTime / dayNightTimer.phase4;
             }
         }
 	}

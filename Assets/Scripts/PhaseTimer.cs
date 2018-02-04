@@ -5,13 +5,19 @@ public class PhaseTimer{
     private Timer timeToUpdate;
     private List<int> phases = new List<int>();
     public int phase;
+
+    public int phase1 = 10;
+    public int phase2 = 10;
+    public int phase3 = 10;
+    public int phase4 = 10;
+
 	// Use this for initialization
 	public void Start () {
-        if(phases.Count == 0)
-        {
-            return;
-        }
         phase = 0;
+        addPhase(phase1);
+        addPhase(phase2);
+        addPhase(phase3);
+        addPhase(phase4);
         //setting timer and timer eventhandler
         timeToUpdate = new Timer
         {
