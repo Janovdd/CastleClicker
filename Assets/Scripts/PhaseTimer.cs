@@ -6,10 +6,10 @@ public class PhaseTimer{
     private List<int> phases = new List<int>();
     public int phase;
 
-    public int phase1 = 10;
-    public int phase2 = 10;
-    public int phase3 = 10;
-    public int phase4 = 10;
+    public int phase1 = 20;
+    public int phase2 = 5;
+    public int phase3 = 20;
+    public int phase4 = 5;
 
 	// Use this for initialization
 	public void Start () {

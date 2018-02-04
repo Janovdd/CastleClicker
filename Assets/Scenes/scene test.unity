@@ -254,6 +254,85 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   troop: {fileID: 1477168091825628, guid: b3b0decd7b5f36e4cb0846e8166f9c52, type: 2}
+--- !u!1 &124694855
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 124694856}
+  - component: {fileID: 124694857}
+  - component: {fileID: 124694858}
+  m_Layer: 0
+  m_Name: Point light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &124694856
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 124694855}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 415562129}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &124694857
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 124694855}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 2
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1.2
+  m_Range: 12
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!114 &124694858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 124694855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7e75bca0d8ec0744a56af5b5fca7a15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorPhase0: {r: 0, g: 0, b: 0, a: 1}
+  colorPhase2: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &134575640
 GameObject:
   m_ObjectHideFlags: 0
@@ -535,10 +614,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0adec02beb5d649449c2fb33d5b37c48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationPhase0: 1
-  durationPhase1: 1
-  durationPhase2: 1
-  durationPhase3: 1
   colorPhase0: {r: 1, g: 1, b: 1, a: 1}
   colorPhase2: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &229289292
@@ -845,10 +920,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0adec02beb5d649449c2fb33d5b37c48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationPhase0: 1
-  durationPhase1: 1
-  durationPhase2: 1
-  durationPhase3: 1
   colorPhase0: {r: 1, g: 1, b: 1, a: 1}
   colorPhase2: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &359039879
@@ -936,10 +1007,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0adec02beb5d649449c2fb33d5b37c48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationPhase0: 1
-  durationPhase1: 1
-  durationPhase2: 1
-  durationPhase3: 1
   colorPhase0: {r: 1, g: 1, b: 1, a: 1}
   colorPhase2: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &372086507
@@ -1161,6 +1228,94 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &415562127
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 415562129}
+  - component: {fileID: 415562128}
+  - component: {fileID: 415562130}
+  m_Layer: 0
+  m_Name: Moon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &415562128
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 415562127}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: de6d2bb0c8eb1cd4ca55708d6988938d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 654e7bd9bbf8157448795eda893c7a9c, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 14.74, y: 14.75}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!4 &415562129
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 415562127}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.35, y: 3.1, z: 0}
+  m_LocalScale: {x: 0.18, y: 0.18, z: 1}
+  m_Children:
+  - {fileID: 124694856}
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &415562130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 415562127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0adec02beb5d649449c2fb33d5b37c48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorPhase0: {r: 1, g: 1, b: 1, a: 0}
+  colorPhase2: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &429360849
 GameObject:
   m_ObjectHideFlags: 0
@@ -1423,10 +1578,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0adec02beb5d649449c2fb33d5b37c48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationPhase0: 1
-  durationPhase1: 1
-  durationPhase2: 1
-  durationPhase3: 1
   colorPhase0: {r: 1, g: 1, b: 1, a: 1}
   colorPhase2: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &642226251
@@ -1706,7 +1857,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1633249214
+  randomSeed: -1898651896
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -5170,10 +5321,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7e75bca0d8ec0744a56af5b5fca7a15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationPhase0: 1
-  durationPhase1: 1
-  durationPhase2: 1
-  durationPhase3: 1
   colorPhase0: {r: 0, g: 0, b: 0, a: 1}
   colorPhase2: {r: 1, g: 0.72156864, b: 0.34509805, a: 1}
 --- !u!1 &698246179
@@ -5253,10 +5400,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7e75bca0d8ec0744a56af5b5fca7a15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationPhase0: 1
-  durationPhase1: 1
-  durationPhase2: 1
-  durationPhase3: 1
   colorPhase0: {r: 0, g: 0, b: 0, a: 1}
   colorPhase2: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &701987869
@@ -5283,7 +5426,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 701987869}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.79, y: -3.67, z: 4.182892}
+  m_LocalPosition: {x: -6.79, y: -3.67, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2041322157}
@@ -5300,7 +5443,7 @@ Light:
   m_Type: 2
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_Intensity: 2
-  m_Range: 9
+  m_Range: 6
   m_SpotAngle: 78.90631
   m_CookieSize: 10
   m_Shadows:
@@ -5336,10 +5479,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7e75bca0d8ec0744a56af5b5fca7a15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationPhase0: 1
-  durationPhase1: 1
-  durationPhase2: 1
-  durationPhase3: 1
   colorPhase0: {r: 0, g: 0, b: 0, a: 1}
   colorPhase2: {r: 1, g: 0.72156864, b: 0.34509805, a: 1}
 --- !u!1 &723937896
@@ -5366,7 +5505,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 723937896}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.19, y: -3.65, z: 4.182892}
+  m_LocalPosition: {x: -8.19, y: -3.65, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2041322157}
@@ -5383,7 +5522,7 @@ Light:
   m_Type: 2
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_Intensity: 2
-  m_Range: 9
+  m_Range: 6
   m_SpotAngle: 78.90631
   m_CookieSize: 10
   m_Shadows:
@@ -5419,10 +5558,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7e75bca0d8ec0744a56af5b5fca7a15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationPhase0: 1
-  durationPhase1: 1
-  durationPhase2: 1
-  durationPhase3: 1
   colorPhase0: {r: 0, g: 0, b: 0, a: 1}
   colorPhase2: {r: 1, g: 0.72156864, b: 0.34509805, a: 1}
 --- !u!1 &727821629
@@ -5656,10 +5791,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0adec02beb5d649449c2fb33d5b37c48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationPhase0: 1
-  durationPhase1: 1
-  durationPhase2: 1
-  durationPhase3: 1
   colorPhase0: {r: 0.8014706, g: 0.8014706, b: 0.8014706, a: 1}
   colorPhase2: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &822358153
@@ -5861,10 +5992,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7e75bca0d8ec0744a56af5b5fca7a15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationPhase0: 1
-  durationPhase1: 1
-  durationPhase2: 1
-  durationPhase3: 1
   colorPhase0: {r: 0, g: 0, b: 0, a: 1}
   colorPhase2: {r: 1, g: 0.72156864, b: 0.34509805, a: 1}
 --- !u!1 &839500320
@@ -6067,10 +6194,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7e75bca0d8ec0744a56af5b5fca7a15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationPhase0: 1
-  durationPhase1: 1
-  durationPhase2: 1
-  durationPhase3: 1
   colorPhase0: {r: 0, g: 0, b: 0, a: 1}
   colorPhase2: {r: 1, g: 0.72156864, b: 0.34509805, a: 1}
 --- !u!1 &1041982290
@@ -6150,10 +6273,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7e75bca0d8ec0744a56af5b5fca7a15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationPhase0: 1
-  durationPhase1: 1
-  durationPhase2: 1
-  durationPhase3: 1
   colorPhase0: {r: 1, g: 1, b: 1, a: 1}
   colorPhase2: {r: 0.011156168, g: 0, b: 0.14705884, a: 1}
 --- !u!1 &1081670101
@@ -6314,10 +6433,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0adec02beb5d649449c2fb33d5b37c48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationPhase0: 1
-  durationPhase1: 1
-  durationPhase2: 1
-  durationPhase3: 1
   colorPhase0: {r: 1, g: 1, b: 1, a: 0}
   colorPhase2: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1109597056
@@ -6543,10 +6658,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7e75bca0d8ec0744a56af5b5fca7a15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationPhase0: 1
-  durationPhase1: 1
-  durationPhase2: 1
-  durationPhase3: 1
   colorPhase0: {r: 0, g: 0, b: 0, a: 1}
   colorPhase2: {r: 1, g: 0, b: 0, a: 0.128}
 --- !u!1 &1170501561
@@ -6626,10 +6737,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7e75bca0d8ec0744a56af5b5fca7a15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationPhase0: 1
-  durationPhase1: 1
-  durationPhase2: 1
-  durationPhase3: 1
   colorPhase0: {r: 0, g: 0, b: 0, a: 1}
   colorPhase2: {r: 1, g: 0.72156864, b: 0.34509805, a: 1}
 --- !u!1 &1255339342
@@ -7109,10 +7216,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0adec02beb5d649449c2fb33d5b37c48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationPhase0: 1
-  durationPhase1: 1
-  durationPhase2: 1
-  durationPhase3: 1
   colorPhase0: {r: 1, g: 1, b: 1, a: 1}
   colorPhase2: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &1421443144
@@ -7200,10 +7303,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0adec02beb5d649449c2fb33d5b37c48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationPhase0: 1
-  durationPhase1: 1
-  durationPhase2: 1
-  durationPhase3: 1
   colorPhase0: {r: 1, g: 1, b: 1, a: 1}
   colorPhase2: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &1421857957
@@ -7332,10 +7431,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7e75bca0d8ec0744a56af5b5fca7a15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationPhase0: 1
-  durationPhase1: 1
-  durationPhase2: 1
-  durationPhase3: 1
   colorPhase0: {r: 0, g: 0, b: 0, a: 1}
   colorPhase2: {r: 1, g: 0, b: 0, a: 0.128}
 --- !u!1 &1523774314
@@ -7523,7 +7618,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1585164913}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.4694824, y: 2.4, z: 4.182892}
+  m_LocalPosition: {x: -7.4694824, y: 2.4, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2041322157}
@@ -7540,10 +7635,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7e75bca0d8ec0744a56af5b5fca7a15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationPhase0: 1
-  durationPhase1: 1
-  durationPhase2: 1
-  durationPhase3: 1
   colorPhase0: {r: 0, g: 0, b: 0, a: 1}
   colorPhase2: {r: 1, g: 0.72156864, b: 0.34509805, a: 1}
 --- !u!108 &1585164916
@@ -7557,7 +7648,7 @@ Light:
   m_Type: 2
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_Intensity: 2
-  m_Range: 9
+  m_Range: 6.06
   m_SpotAngle: 78.90631
   m_CookieSize: 10
   m_Shadows:
@@ -7722,10 +7813,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7e75bca0d8ec0744a56af5b5fca7a15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationPhase0: 1
-  durationPhase1: 1
-  durationPhase2: 1
-  durationPhase3: 1
   colorPhase0: {r: 0, g: 0, b: 0, a: 1}
   colorPhase2: {r: 1, g: 0.72156864, b: 0.34509805, a: 1}
 --- !u!1 &1850102987
@@ -7968,10 +8055,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7e75bca0d8ec0744a56af5b5fca7a15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationPhase0: 1
-  durationPhase1: 1
-  durationPhase2: 1
-  durationPhase3: 1
   colorPhase0: {r: 0, g: 0, b: 0, a: 1}
   colorPhase2: {r: 1, g: 0.72156864, b: 0.34509805, a: 1}
 --- !u!1 &2041322156
@@ -8213,10 +8296,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0adec02beb5d649449c2fb33d5b37c48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationPhase0: 1
-  durationPhase1: 1
-  durationPhase2: 1
-  durationPhase3: 1
   colorPhase0: {r: 1, g: 1, b: 1, a: 0}
   colorPhase2: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &2110293773
@@ -8389,7 +8468,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2139080764}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.4694824, y: -1.0431229, z: 4.182892}
+  m_LocalPosition: {x: -7.4694824, y: -1.0431229, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2041322157}
@@ -8406,7 +8485,7 @@ Light:
   m_Type: 2
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_Intensity: 2
-  m_Range: 9
+  m_Range: 6
   m_SpotAngle: 78.90631
   m_CookieSize: 10
   m_Shadows:
@@ -8442,9 +8521,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7e75bca0d8ec0744a56af5b5fca7a15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationPhase0: 1
-  durationPhase1: 1
-  durationPhase2: 1
-  durationPhase3: 1
   colorPhase0: {r: 0, g: 0, b: 0, a: 1}
   colorPhase2: {r: 1, g: 0.72156864, b: 0.34509805, a: 1}
