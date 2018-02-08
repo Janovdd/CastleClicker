@@ -294,6 +294,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\DamageManager.cs" />
     <Compile Include="Assets\Scripts\DayNightCycleBackground.cs" />
     <Compile Include="Assets\Scripts\DayNightCycleDL.cs" />
     <Compile Include="Assets\Scripts\DayTime.cs" />
@@ -315,6 +316,7 @@
     <Compile Include="Assets\Scripts\SpriteClick.cs" />
     <Compile Include="Assets\Scripts\SunAnimation.cs" />
     <Compile Include="Assets\Scripts\Troop.cs" />
+    <Compile Include="Assets\Scripts\TroopDamage.cs" />
     <Compile Include="Assets\Scripts\TurnBlack.cs" />
     <Compile Include="Assets\Scripts\Weather\Cloud.cs" />
     <Compile Include="Assets\Scripts\Weather\Rain.cs" />

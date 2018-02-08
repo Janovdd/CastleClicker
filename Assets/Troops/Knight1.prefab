@@ -174,7 +174,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1477168091825628}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15, y: -49, z: 0}
+  m_LocalPosition: {x: 129, y: -49, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children:
   - {fileID: 4832326198737836}
@@ -370,9 +370,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10000
-  movementSpeed: 2
+  movementSpeed: 150
   dps: 10
   survivalTime: 10
+  troopDamage: {fileID: 1835120336718524, guid: 19e0a6ba329064b41b34bd9ac4b43925,
+    type: 2}
 --- !u!212 &212042734484711396
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -54,7 +54,7 @@ public class ToolsUpgradeManager : MonoBehaviour
             {
                 GetComponent<Image>().sprite = grayButton;
 
-                if (goldManager.gold >= cost && amount < maxAmount)
+                if (diamondManager.diamonds >= cost && amount < maxAmount)
                 {
                     GetComponent<Image>().sprite = greenButton;
                 }
@@ -67,6 +67,17 @@ public class ToolsUpgradeManager : MonoBehaviour
         else
         {
             UpgradeCost.text = NC.GetNumberIntoString(cost, false) + " Gold";
+
+            GetComponent<Image>().sprite = grayButton;
+
+            if (goldManager.gold >= cost && amount < maxAmount)
+            {
+                GetComponent<Image>().sprite = greenButton;
+            }
+            else
+            {
+                GetComponent<Image>().sprite = grayButton;
+            }
         }
 
         if (amount >= maxAmount)
