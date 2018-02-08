@@ -16,6 +16,7 @@ public class TroopDamage : MonoBehaviour
         dps = knight.GetComponent<Troop>().dps;
         st = knight.GetComponent<Troop>().dps;
         StartCoroutine(waitSecond(dps, st));
+        GameObject.Find("damagePerSecond").GetComponent<DamageManager>().dps += dps;
     } 
 
     // Update is called once per frame

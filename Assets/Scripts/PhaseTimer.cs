@@ -12,8 +12,8 @@ public class PhaseTimer{
     public int phase4 = 5;
 
 	// Use this for initialization
-	public void Start () {
-        phase = 0;
+	public void Start() {
+        phase = 3;
         addPhase(phase1);
         addPhase(phase2);
         addPhase(phase3);
