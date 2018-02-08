@@ -4,17 +4,13 @@ using UnityEngine;
 
 public class ZPosition : MonoBehaviour {
 
-    float x;
-    float y;
     int z;
     Vector3 pos;
 
 	// Use this for initialization
 	void Start () {
-        x = -6.8f;
-        y = -6.8f;
-        z = Random.Range(0, -10);
-        pos= new Vector3(x, y, z);
+        z = Random.Range(0, -6);
+        pos= new Vector3(0, -48, z);
         transform.position = pos;
 	}
 	

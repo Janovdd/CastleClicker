@@ -51,19 +51,33 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\DayTime.cs" />
      <Compile Include="Assets\Scripts\DayNightCycleBackground.cs" />
      <Compile Include="Assets\Scripts\DayNightCycleDL.cs" />
+     <Compile Include="Assets\Scripts\DayTime.cs" />
+     <Compile Include="Assets\Scripts\Economy\CropManager.cs" />
+     <Compile Include="Assets\Scripts\Economy\CropUpgradeManager.cs" />
+     <Compile Include="Assets\Scripts\Economy\DiamondManager.cs" />
+     <Compile Include="Assets\Scripts\Economy\FarmerManager.cs" />
+     <Compile Include="Assets\Scripts\Economy\FarmerUpgradeManager.cs" />
+     <Compile Include="Assets\Scripts\Economy\GoldManager.cs" />
+     <Compile Include="Assets\Scripts\Economy\NumberConverter.cs" />
+     <Compile Include="Assets\Scripts\Economy\ToolsManager.cs" />
+     <Compile Include="Assets\Scripts\Economy\ToolsUpgradeManager.cs" />
+     <Compile Include="Assets\Scripts\Economy\VaultManager.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
+     <Compile Include="Assets\Scripts\Open UI.cs" />
      <Compile Include="Assets\Scripts\PhaseTimer.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\SpriteClick.cs" />
+     <Compile Include="Assets\Scripts\SunAnimation.cs" />
      <Compile Include="Assets\Scripts\Troop.cs" />
+     <Compile Include="Assets\Scripts\TurnBlack.cs" />
      <Compile Include="Assets\Scripts\Weather\Cloud.cs" />
      <Compile Include="Assets\Scripts\Weather\Rain.cs" />
      <Compile Include="Assets\Scripts\Weather\Thunder.cs" />
      <Compile Include="Assets\Scripts\Weather\WeatherCycle.cs" />
-     <Compile Include="Assets\TurnBlack.cs" />
+     <Compile Include="Assets\Scripts\ZPosition.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>H:/Programs/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

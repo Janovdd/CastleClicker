@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 114062182999697078}
   - component: {fileID: 82397008425354184}
   m_Layer: 0
-  m_Name: Knight 1
+  m_Name: Knight1
   m_TagString: Troop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -174,8 +174,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1477168091825628}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.29, y: -6.849, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 0.09367852}
+  m_LocalPosition: {x: -15, y: -49, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children:
   - {fileID: 4832326198737836}
   - {fileID: 4151673551495984}
@@ -369,6 +369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cdd775950e29af4baafa07f17a6cd9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 10000
   movementSpeed: 2
   dps: 10
   survivalTime: 10
