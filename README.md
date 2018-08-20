@@ -1,2 +1,1 @@
 # CastleClicker
-OMG BEST IDLE GAME EVAAAAH
